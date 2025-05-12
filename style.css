@@ -1,0 +1,150 @@
+/* Reset dan styling dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1abc9c;
+    padding: 50px 0;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigasi */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #34495e;
+    padding: 10px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #16a085;
+  }
+  
+  /* Konten Utama */
+  main {
+    max-width: 800px;  /* Menetapkan lebar maksimal */
+    margin: 0 auto;    /* Menjaga konten tetap terpusat di tengah */
+    padding: 20px;     /* Memberikan ruang di sekeliling konten */
+    line-height: 1.6;  /* Menjaga jarak antar baris */
+    text-align: left;  /* Menyusun teks rata kiri */
+  }
+  
+  h2 {
+    text-align: left;  /* Judul tetap rata kiri */
+    margin-bottom: 20px;  /* Memberikan jarak di bawah judul */
+  }
+  
+  p {
+    text-align: left;  /* Menyusun teks rata kiri */
+    margin-bottom: 20px;  /* Memberikan jarak antar paragraf */
+  }
+  
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile img {
+    width: 189px;
+    height: 284;
+    border-radius: 12px; /* sudut lembut */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* bayangan */
+    transition: transform 0.3s ease;
+  }
+  
+  .profile img:hover {
+    transform: scale(1.03);
+  }
+  
+  .bio {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Galeri Foto dan Video */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;        /* Biar turun ke bawah jika sudah 4 */
+    gap: 16px;              /* Jarak antar foto */
+    justify-content: flex-start;
+  }
+  
+  .gallery img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .video-gallery {
+    margin: 20px 0;
+    text-align: center; /* agar video rata tengah (opsional) */
+  }
+  
+  .video-gallery video {
+    width: 100%;
+    max-width: 480px; /* atur ukuran maksimum video */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
